@@ -5,6 +5,10 @@ body{
 	padding-left:0px;
 }
 
+h2{
+	text-align : Center;
+}
+
 .form-container{
 	width:250px;
 	height:auto;
