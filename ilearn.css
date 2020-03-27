@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+	height: 300px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+	background: url("Pattern58.jpg") no-repeat;
+}
+
+
+.heading {
+	text-align: center;
+	font-size: 25px;
+	padding: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: darkslategrey; 
+}
+
+
+.login-box {
+	font-size: 25px;
+	padding: none;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: darkslategrey;
+}
+
+.textbox {
+	overflow: hidden;
+	font-size: 20px;
+	
+}
+
+
+
+.btn {
+	color: darkslategrey;
+	cursor: pointer;
+}
+
+a {
+	font-size: 10px;
+	color: darkslategrey;
+}
