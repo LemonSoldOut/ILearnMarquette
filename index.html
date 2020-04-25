@@ -1,23 +1,76 @@
-<!DOCTYPE html>
 <html>
+<div id="background" class="background-div">
 <head>
-	<title>HTML Login Form</title>
-	<link rel="stylesheet" type ="text/css" href="global.css">
-
+    <title>iLearn Login</title>
+    <link rel="stylesheet" href ="style.css"/>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+    
 </head>
-
 <body>
-<h2>ILEARN LOGIN</h2>
-<div class ="form-container">
-	<ul style="list-style-type:none;">
-		<li>Member login</li>
-		<li><input type="text" name="User Name" placeholder="User Name"> </li>
-		<li><input type="password" name="Password" placeholder="Enter Password"> </li>
-		<li><input type="button" name="submission" value="Login"> </li>
-		<li><a href="https://www.youtube.com/watch?v=75rKK3xyoHM">Create Account</a></li>
-		<li><a href="https://www.youtube.com/watch?v=MdC2jPPxAwk&list=LL_Er9oUHVNs5CoINE0w4a6A&index=2&t=0s">Forgot Password</a></li>
-	</ul>
-</div>
-</body>
+   
+    <!--login screen-->
+    <div id="login_div" class="main-div"> 
+        <h3 id="iLearnLogin">iLearn Login</h3>      
+        <input type="email" placeholder="Email" id="email_field"/>
+        <input type="password" placeholder="Password" id="password_field"/>
+        <button onclick="login()">Login to Account</button>
+        <button onclick="createaccount()">Create an Account</button>
+    </div>
+    
+    <!--create an account screen-->
+    <div id="createuser_div" class="main-div">    
+      <h3>iLearn Create an Account</h3> 
+      <input type="email" placeholder="Email" id="new_email_field"/>
+      <input type="password" placeholder="Password" id="new_password_field"/>
+      <button onclick="createuser()">Done</button>
+  </div>
 
+    <!--logged in screen-->
+    <div id="user_div" class="loggedin-div">
+        <h3>Welcome to iLearn</h3>
+        <p id = "user_para">Welcome to iLearn. You're currently logged in.</p>
+        <button onclick="homepage()">Continue to Homepage</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <!--your homepage screen-->
+    <div id="homepage_div" class="loggedin-div">
+        <h3>Homepage</h3>
+        <p id = "homepage_para">Welcome to your homepage.</p>
+		<a id="link1">Class 1</a>
+		<br>
+		<a id="link2">Class 2</a>
+		<br>
+		<a id="link3">Class 3</a>
+		<br>
+		<a id="link4">Class 4</a>
+		<br>
+		<a id="link5">Class 5</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    
+    
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDn9RmVM_VE81PpNx-X5CbTYH8Ni77Tx2w",
+            authDomain: "ilearn-35400.firebaseapp.com",
+            databaseURL: "https://ilearn-35400.firebaseio.com",
+            projectId: "ilearn-35400",
+            storageBucket: "ilearn-35400.appspot.com",
+            messagingSenderId: "742966844766",
+            appId: "1:742966844766:web:2b451da50129a63abf83cf",
+            measurementId: "G-Y015Z4800Y"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.auth();
+        firebase.firestore();
+        
+    </script>
+    <script src="index.js"></script>
+  
+</body>
+</div>
 </html>
