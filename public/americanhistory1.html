@@ -1,0 +1,84 @@
+<html>
+<div id="background" class="background-div">
+<head>
+    <title>iLearn Login</title>
+    <link rel="stylesheet" href ="style.css"/>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+    
+</head>
+<body>
+   
+    
+    <!--your homepage screen-->
+    <div id="class_homepage_div" class="class-homepage-div">
+        <center>
+        <h3>American History</h3>
+        </center>
+        <div id="course_div" class="class-div">
+            <center>
+            <h4>Course Information</h4>
+            <p id = "homepage_para">Professor: Dr. John Doe <br> Meeting time: 5 - 6:15pm M/W <br> Office Hours: 4 - 5pm M/W <br>Location: Cudahy 118 <br><a href="AmericanHistorySyllabus.pdf" download>Syllabus</a></p><br>
+            </center>
+        </div>
+        <div id="assignment_div">
+            <center>
+            <h4>Assignments </h4>
+            <a href="Assignment.pdf" download>Assignment 1</a><br>
+            <a href="Assignment.pdf" download>Assignment 2</a><br>
+            <a href="Assignmet.pdf" download>Assignment 3</a><br>
+            <a href="Assignment.pdf" download>Assignment 4</a><br><br>
+            </center>
+        </div>
+        <br>
+        <br>
+        <div id="lecture_div">
+            <center>
+            <h4>Lecture Slides</h4>
+            <a href="AmericanHistoryppt1.pdf" download>Lecture 1</a><br>
+            <a href="AmericanHistoryppt1.pdf" download>Lecture 2</a><br>
+            <a href="AmericanHistoryppt1.pdf" download>Lecture 3</a><br>
+            <a href="AmericanHistoryppt1.pdf" download>Lecture 4</a><br>
+            <a href="AmericanHistoryppt1.pdf" download>Lecture 5</a>
+            </center>
+        </div>
+        <div id="grades_div">
+            <center>
+            <h4>Grades</h4>
+            <p id = "homepage_para"></p>Assignment 1: 20/20<br>Assignment 2: 18/20<br>Quiz 1: 10/10<br>Midterm: 46/50<br>Assignment 3: 17/20<br>Quiz 2: 8/10<br>Assignment 4: 44/50<br>Quiz 3: 10/10<br>Final Exam: 47/50</p>
+            </center>
+        </div>
+        <br>
+        
+       <!---<p id = "homepage_para">Assignments</p>-->
+       <br>
+        <button onclick="americanhistory()">Logout</button>
+    
+        <!--<a href="index.html#user_div.loggedin_div">Back to welcome screen</a>-->
+    </div>
+  
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDn9RmVM_VE81PpNx-X5CbTYH8Ni77Tx2w",
+            authDomain: "ilearn-35400.firebaseapp.com",
+            databaseURL: "https://ilearn-35400.firebaseio.com",
+            projectId: "ilearn-35400",
+            storageBucket: "ilearn-35400.appspot.com",
+            messagingSenderId: "742966844766",
+            appId: "1:742966844766:web:2b451da50129a63abf83cf",
+            measurementId: "G-Y015Z4800Y"
+        };
+        if(!firebase.apps.length){
+            firebase.initializeApp(firebaseConfig);
+        }
+        
+        firebase.auth();
+        firebase.firestore();
+        
+    </script>
+    <script src="index.js"></script>
+  
+</body>
+</div>
+</html>

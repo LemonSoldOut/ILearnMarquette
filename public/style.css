@@ -1,0 +1,96 @@
+body{
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    color: #505050;
+    font-size: 16px;
+}
+input, button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background-image: url('Pattern58.jpg');;
+}
+.main-div, .loggedin-div{
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding:20px;
+    border: 2px solid #808080;
+    background-color: white;
+}
+.class-homepage-div{
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding:20px;
+    border: 2px solid #808080;
+    background-color: white;
+
+}
+
+.class-div{
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    border: 4px solid #808080;
+    background-color: white;
+}
+
+#assignment_div{
+    width: 250px;
+    height: 200px;
+    float: right;
+    border: 4px solid #808080;
+    background-color: white;
+    overflow-x: hidden; 
+    overflow-x: auto;
+    text-align: justify;
+}
+#lecture_div{
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    border: 4px solid #808080;
+    background-color: white;
+    overflow-x: hidden; 
+    overflow-x: auto;
+    text-align: justify;
+}
+#grades_div{
+    width: 250px;
+    height: 200px;
+    float: right;
+    border: 4px solid #808080;
+    background-color: white;
+    overflow-x: hidden; 
+    overflow-x: auto;
+    text-align: justify;
+}
+.main-div input {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-div button, .loggedin-div button, .class-homepage-div button {
+    background:#A9A9A9 ;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+}
+h4{
+    padding-top: 15px;
+}
